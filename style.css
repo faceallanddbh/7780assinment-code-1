@@ -307,3 +307,111 @@ footer {
 .footer-links a:hover {
     text-decoration: underline;
 }
+
+
+/* =========================================
+   移动端适配 (Responsive Design)
+   当屏幕宽度小于 768px 时，下面的样式生效
+   ========================================= */
+@media screen and (max-width: 768px) {
+
+    /* [学习笔记] 1. 调整导航栏：从左右布局变为垂直堆叠 */
+    .navbar {
+        height: auto;
+        /* 高度不再固定，随内容撑开 */
+        padding: 10px 0;
+        /* 增加上下内边距 */
+    }
+
+    .nav-content {
+        flex-direction: column;
+        /* 关键：让 Logo、菜单、按钮垂直排列 */
+        gap: 15px;
+        /* 增加垂直间距 */
+    }
+
+    .nav-links {
+        gap: 20px;
+        /* 缩小菜单项之间的间距 */
+        font-size: 14px;
+        /* 手机上字号稍微改小一点 */
+        width: 100%;
+        justify-content: center;
+        /* 菜单居中显示 */
+        padding: 0;
+    }
+
+    /* [学习笔记] 2. 隐藏或简化元素：手机屏幕窄，隐藏横幅右侧的链接 */
+    .slogan-banner a {
+        display: none;
+        /* 简单粗暴，手机上只保留文字，隐藏链接 */
+    }
+
+    /* [学习笔记] 3. 轮播图高度调整：手机上不需要600px那么高 */
+    .carousel {
+        height: 60vh;
+        /* 使用视口高度单位，占屏幕高度的60% */
+    }
+
+    .slide-content h1 {
+        font-size: 32px;
+        /* 标题字号减半 (原60px) */
+    }
+
+    .slide-content p {
+        font-size: 16px;
+        /* 副标题字号减小 */
+        padding: 0 20px;
+        /* 防止文字顶到屏幕边缘 */
+    }
+
+    /* [学习笔记] 4. 左右分栏变单栏：公司简介部分 */
+    .company-intro {
+        flex-direction: column;
+        /* 关键：从左右排布变为上下堆叠 */
+        padding: 60px 20px;
+        /* 减少上下的留白 */
+        gap: 30px;
+    }
+
+    .logo-box {
+        width: 120px;
+        /* Logo 尺寸缩小 */
+        height: 120px;
+        font-size: 60px;
+    }
+
+    .intro-right h2 {
+        font-size: 28px;
+        /* 标题变小 */
+        text-align: center;
+        /* 手机上居中对齐更好看 */
+    }
+
+    .intro-right p {
+        font-size: 16px;
+        text-align: justify;
+        /* 文本两端对齐 */
+    }
+
+    /* [学习笔记] 5. 调整轮播箭头的位置，避免遮挡文字 */
+    .prev,
+    .next {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* [学习笔记] 6. Footer 调整 */
+    .footer-content {
+        flex-direction: column;
+        /* 上下排列 */
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-links a {
+        margin: 0 10px;
+        /* 调整链接间距 */
+    }
+}
