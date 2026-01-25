@@ -125,7 +125,7 @@ a {
     display: block;
 }
 
-/* 模拟背景图 - 实际开发中这里会是 img */
+/* 模拟背景图 - 实际开发中这里会是 img
 .slide-bg {
     width: 100%;
     height: 100%;
@@ -144,7 +144,46 @@ a {
 
 .bg-3 {
     background: radial-gradient(circle, #3a1a1a 0%, #000 100%);
+} */
+
+/* 修改部分：使用真实图片替换原来的渐变色 */
+.slide-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background-size: cover;
+    /* 关键：让图片铺满整个区域 */
+    background-position: center;
+    /* 关键：图片居中显示 */
+    /* 加一层黑色遮罩，防止背景太亮导致文字看不清 */
+    filter: brightness(0.6);
+    transition: transform 6s ease;
+    /* 增加一个缓慢放大的动效 */
 }
+
+/* 第一张：Lumina Glass - 使用一张极简的 VR/AR 眼镜图 */
+.bg-1 {
+    background-image: url('/assets/1.png');
+}
+
+/* 第二张：Lumina Chip - 使用一张发光的芯片微距图 */
+.bg-2 {
+    background-image: url('/assets/2.png');
+}
+
+/* 第三张：Lumina OS - 使用一张流动的抽象光影图 */
+.bg-3 {
+    background-image: url('/assets/3.jpg');
+}
+
+/* 增加一个高级动效：图片缓慢放大 */
+.slide.active .slide-bg {
+    transform: scale(1.1);
+}
+
+
 
 .slide-content {
     position: relative;
@@ -223,7 +262,7 @@ a {
     justify-content: center;
 }
 
-.logo-box {
+/* .logo-box {
     width: 200px;
     height: 200px;
     background: #111;
@@ -236,6 +275,58 @@ a {
     color: #333;
     border-radius: 20px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+} */
+
+/* 修改简介区的大 Logo 容器 */
+.big-logo-container {
+    /* 1. 设置想要的大小 */
+    width: 300px;
+    height: 300px;
+
+    /* 2. 关键：设置圆角 */
+    border-radius: 40px;
+
+    /* 3. 关键：溢出隐藏！ */
+    /* 这行代码是核心：它会把图片超出圆角的部分“切掉”，让图片强制变成圆角 */
+    overflow: hidden;
+
+    /* 4. 装饰：加个阴影让它更有质感 */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+
+    /* 保持悬浮动画 */
+    animation: float 6s ease-in-out infinite;
+
+    /* 这里的背景色可以去掉，因为图片会盖住它，但在图片加载前可以当底色 */
+    background: #2a2a2a;
+}
+
+.big-logo-container img {
+    /* 5. 让图片完全撑满容器 */
+    width: 100%;
+    height: 100%;
+
+    /* 6. 关键：保持比例填充 */
+    /* cover: 图片会按比例放大填满整个盒子，可能会裁掉边缘，但效果最像 APP 图标 */
+    /* contain: 图片会完整显示，但可能会有黑边。建议用 cover */
+    object-fit: cover;
+
+    display: block;
+    /* 消除图片底部的微小缝隙 */
+}
+
+/* 悬浮动画保持不变 */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .intro-right {
