@@ -61,6 +61,17 @@ const translations = {
         'footer_rights': 'Copyright © 2026 Green World. 保留所有权利。',
 
         'btn_order': '订购 >',
+
+        'team_title': '我们的团队',
+        'role_pm': '项目经理',
+        'role_analyst': '分析师',
+        'role_developer': '开发人员',
+        'role_tester': '测试人员',
+
+        'role_1': '邓海龙',
+        'role_2': '吴奇航',
+        'role_3': '王凌超',
+        'role_4': '王子丰'
     },
     'en': {
         'nav_home': 'Home',
@@ -78,6 +89,17 @@ const translations = {
         'footer_rights': 'Copyright © 2026 Green World. All rights reserved.',
 
         'btn_order': 'Order >',
+
+        'team_title': 'Our Team',
+        'role_pm': 'Project Manager',
+        'role_analyst': 'Analyst',
+        'role_developer': 'Developer',
+        'role_tester': 'Tester',
+
+        'role_1': 'DENG HAILONG',
+        'role_2': 'Wu QIHANG',
+        'role_3': 'WANG LINGCHAO',
+        'role_4': 'WANG ZIFENG'
     }
 };
 

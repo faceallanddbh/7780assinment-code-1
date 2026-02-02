@@ -582,3 +582,75 @@ footer {
     color: #000;
     border-color: #fff;
 }
+
+.team-section {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.team-section h3 {
+    font-size: 14px;
+    color: #86868b;
+    margin-bottom: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* 网格布局 */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.team-member {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+}
+
+.member-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.m-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #f5f5f7;
+}
+
+.m-id {
+    font-size: 17px;
+    color: #d8d8d8;
+    font-family: monospace;
+}
+
+.m-role {
+    font-size: 13px;
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.footer-divider {
+    border: 0;
+    height: 1px;
+    background: #333;
+    max-width: 1200px;
+    margin: 20px auto;
+}
