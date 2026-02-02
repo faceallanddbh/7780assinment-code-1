@@ -75,7 +75,7 @@ const translations = {
     },
     'en': {
         'nav_home': 'Home',
-        'nav_product': 'product',
+        'nav_product': 'Product',
 
 
         'company_title': 'About Green World',
