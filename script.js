@@ -64,7 +64,7 @@ const translations = {
 
         'team_title': '我们的团队',
         'role_pm': '项目经理',
-        'role_analyst': '分析师',
+        'role_analyst': '分析师/开发人员',
         'role_developer': '开发人员',
         'role_tester': '测试人员',
 
@@ -92,12 +92,12 @@ const translations = {
 
         'team_title': 'Our Team',
         'role_pm': 'Project Manager',
-        'role_analyst': 'Analyst',
+        'role_analyst': 'Analyst/Developer',
         'role_developer': 'Developer',
         'role_tester': 'Tester',
 
         'role_1': 'DENG HAILONG',
-        'role_2': 'Wu QIHANG',
+        'role_2': 'WU QIHANG',
         'role_3': 'WANG LINGCHAO',
         'role_4': 'WANG ZIFENG'
     }
