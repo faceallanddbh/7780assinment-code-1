@@ -46,47 +46,47 @@ function showSlides(n) {
 // 1. 定义翻译字典 
 const translations = {
     'zh': {
-        'nav_home': '首页',
-        'nav_product': '产品',
+        'nav_home': '首頁',
+        'nav_product': '產品',
 
 
-        'company_title': '关于 Green World',
-        'company_desc_1': '绿世界公司是一家位于香港的新循环再造概念机构成立于2026年1月1日。',
-        'company_desc_2': '绿色世界的产品是由公众捐赠，并出售给公众折扣价格。',
+        'company_title': '關於 MīMō',
+        'company_desc_1': 'MīMō公司位於香港，專門銷售高端電子產品。該公司成立於 2026 年 1 月 1 日。',
+        'company_desc_2': 'MīMō的產品直接從供應商處采購，然後以折扣價出售給公眾。',
 
         'entry-content-h2': '想了解更多？',
-        'entry-content-p': '浏览所有产品，找到适合您的那一款。',
-        'btn_explore': '探索所有产品',
+        'entry-content-p': '瀏覽所有產品，找到適合您的那一款。',
+        'btn_explore': '探索所有產品',
 
-        'footer_rights': 'Copyright © 2026 Green World. 保留所有权利。',
+        'footer_rights': 'Copyright © 2026 MīMō. 保留所有權利。',
 
-        'btn_order': '订购 >',
+        'btn_order': '訂購 >',
 
-        'team_title': '我们的团队',
-        'role_pm': '项目经理',
-        'role_analyst': '分析师/开发人员',
-        'role_developer': '开发人员',
-        'role_tester': '测试人员',
+        'team_title': '我們的團隊',
+        'role_pm': '項目經理',
+        'role_analyst': '分析師/開發人員',
+        'role_developer': '開發人員',
+        'role_tester': '測試人員',
 
-        'role_1': '邓海龙',
-        'role_2': '吴奇航',
+        'role_1': '鄧海龍',
+        'role_2': '吳奇航',
         'role_3': '王凌超',
-        'role_4': '王子丰'
+        'role_4': '王子豐'
     },
     'en': {
         'nav_home': 'Home',
         'nav_product': 'Product',
 
 
-        'company_title': 'About Green World',
-        'company_desc_1': 'Green World company is a new re-cycling concept organizationbased in Hong Kong which established on Jan 1,2026.',
-        'company_desc_2': "Green World's products were donated by the public and sold tothe public with discounted price.",
+        'company_title': 'About MīMō',
+        'company_desc_1': 'MīMō Company is based in Hong Kong that specializes in selling high-end electronic products. It was established on January 1st, 2026.',
+        'company_desc_2': "MīMō's products are directly sourced from suppliers and sold to the public at discounted prices.",
 
         'entry-content-h2': 'Ready to learn more?',
         'entry-content-p': "Browse all products and find the one that's right for you.",
         'btn_explore': 'Explore All Products',
 
-        'footer_rights': 'Copyright © 2026 Green World. All rights reserved.',
+        'footer_rights': 'Copyright © 2026 MīMō. All rights reserved.',
 
         'btn_order': 'Order >',
 
